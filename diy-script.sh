@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 修改默认IP
-sed -i 's/192.168.1.1/192.168.3.180/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.3.60/g' package/base-files/files/bin/config_generate
 
 # 更改默认 Shell 为 zsh
 # sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
@@ -10,7 +10,7 @@ sed -i 's/192.168.1.1/192.168.3.180/g' package/base-files/files/bin/config_gener
 # sed -i 's|/bin/login|/bin/login -f root|g' feeds/packages/utils/ttyd/files/ttyd.config
 
 # 修改默认名字
-sed -i "s/hostname='ImmortalWrt'/hostname='AX1800-Pro'/g" package/base-files/files/bin/config_generate
+sed -i "s/hostname='ImmortalWrt'/hostname='AX1800_Pro'/g" package/base-files/files/bin/config_generate
 
 # 移除要替换的包
 rm -rf feeds/packages/net/mosdns
